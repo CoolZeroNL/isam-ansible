@@ -1,6 +1,6 @@
 # Usage:
 ## Create your inventories files.
-
+```
 └── test
     ├── group_vars
     │   ├── all
@@ -18,6 +18,7 @@
         └── 192.168.198.153
             ├── vars.yml
             └── vault.yml
+```
 
 or Clone Private Inventories
 ```
