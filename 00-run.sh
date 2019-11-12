@@ -22,6 +22,7 @@ mkdir -p /ansible/playbooks
 # Prepare ISAM Ansible Common Roles 
 ansible-galaxy install -c -p /etc/ansible/roles git+https://github.com/ibm-security/isam-ansible-roles.git 
 
+# Prepare ISDS Ansible Common Roles 
 ansible-galaxy install -c -p /etc/ansible/roles git+https://github.com/IBM-Security/isds-ansible-roles.git
 
 if [[ -z "${ANSIBLE_ROLES_PATH}"] ]; then
