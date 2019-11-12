@@ -3,7 +3,7 @@
 # Install OS pre-requisites
 yum -y update; yum clean all
 yum -y install epel-release; yum clean all
-yum -y install unzip gcc curl openssl-devel openssh-client git python python-pip python-crypto python-ldap python-devel; yum clean all
+yum -y install nano unzip gcc curl openssl-devel openssh-client git python python-pip python-crypto python-ldap python-devel; yum clean all
 
 # Install/Update Python modules
 pip install --upgrade pip requests ansible
