@@ -23,5 +23,6 @@ cd isam-ansible
 ```
 
 # Usage
-
+```
 ansible-playbook -i inventories/production prod-settings.yml -vvv
+```
