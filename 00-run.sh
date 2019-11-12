@@ -22,12 +22,15 @@ mkdir -p /ansible/playbooks
 # Prepare ISAM Ansible Common Roles 
 ansible-galaxy install -c -p /etc/ansible/roles git+https://github.com/ibm-security/isam-ansible-roles.git 
 
+ansible-galaxy install -c -p /etc/ansible/roles git+https://github.com/IBM-Security/isds-ansible-roles.git
+
 if [[ -z "${ANSIBLE_ROLES_PATH}"] ]; then
   
   echo 'ANSIBLE_GATHERING=smart' >> /etc/bashrc
   echo 'ANSIBLE_HOST_KEY_CHECKING=false' >> /etc/bashrc
   echo 'ANSIBLE_RETRY_FILES_ENABLED=false' >> /etc/bashrc
   echo 'ANSIBLE_ROLES_PATH=/etc/ansible/roles/isam-ansible-roles' >> /etc/bashrc
+  echo 'ANSIBLE_ROLES_PATH=/etc/ansible/roles/isds-ansible-roles:$ANSIBLE_ROLES_PATH' >> /etc/bashrc
   echo 'ANSIBLE_SSH_PIPELINING=True' >> /etc/bashrc
   echo 'PYTHONPATH=/ansible/lib' >> /etc/bashrc
   echo 'PATH=/ansible/bin:$PATH' >> /etc/bashrc
