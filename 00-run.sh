@@ -10,7 +10,7 @@ pip install --upgrade pip requests ansible
 pip install --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsecurity
 
 # Remove packages to save space
-yum -y remove epel-release gcc openssl-devel
+# yum -y remove epel-release gcc openssl-devel
 
 # Prepare Ansible environment
 mkdir /etc/ansible/ /ansible /etc/ansible/roles/
