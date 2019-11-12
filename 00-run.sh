@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# install in home dir.
+cd ~
+
 # Install OS pre-requisites
 yum -y update; yum clean all
 yum -y install epel-release; yum clean all
