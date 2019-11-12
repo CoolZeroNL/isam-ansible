@@ -1,23 +1,24 @@
 # Usage:
 ## Create your inventories files.
 ```
-└── test
-    ├── group_vars
-    │   ├── all
-    │   │   ├── vars.yml
-    │   │   └── vault.yml
-    │   └── boulder.yml
-    ├── hosts
-    └── host_vars
-        ├── 192.168.198.144
-        │   ├── vars.yml
-        │   └── vault.yml
-        ├── 192.168.198.145
-        │   ├── vars.yml
-        │   └── vault.yml
-        └── 192.168.198.153
-            ├── vars.yml
-            └── vault.yml
+inventories/
+    └── test
+        ├── group_vars
+        │   ├── all
+        │   │   ├── vars.yml
+        │   │   └── vault.yml
+        │   └── boulder.yml
+        ├── hosts
+        └── host_vars
+            ├── 192.168.198.144
+            │   ├── vars.yml
+            │   └── vault.yml
+            ├── 192.168.198.145
+            │   ├── vars.yml
+            │   └── vault.yml
+            └── 192.168.198.153
+                ├── vars.yml
+                └── vault.yml
 ```
 
 or Clone Private Inventories
