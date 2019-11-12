@@ -5,9 +5,6 @@ yum -y update; yum clean all
 yum -y install epel-release; yum clean all
 yum -y install nano unzip gcc curl openssl-devel openssh-client git python python-pip python-crypto python-ldap python-devel; yum clean all
 
-# Install/Update Python modules
-pip install --upgrade pip requests ansible
-pip install --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsecurity
 
 # Remove packages to save space
 # yum -y remove epel-release gcc openssl-devel
@@ -42,6 +39,10 @@ fi
 
 # To load the new environment variables into the current shell session use the source command:
 source ~/.bashrc
+
+# Install/Update Python modules
+pip install --upgrade pip requests ansible
+pip install --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsecurity
 
 
 cd 
