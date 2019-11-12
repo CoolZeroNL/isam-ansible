@@ -40,3 +40,7 @@ fi
 
 # To load the new environment variables into the current shell session use the source command:
 source ~/.bashrc
+
+
+cd 
+git clone https://github.com/IBM-Security/isam-ansible-playbook-sample.git
