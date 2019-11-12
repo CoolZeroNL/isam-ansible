@@ -47,3 +47,4 @@ pip install --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsec
 
 cd 
 git clone https://github.com/IBM-Security/isam-ansible-playbook-sample.git
+cp isam-ansible/ansible.cfg isam-ansible-playbook-sample/
