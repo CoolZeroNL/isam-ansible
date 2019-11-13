@@ -4,8 +4,8 @@ https://hub.docker.com/r/mludocker/isam-ansible/dockerfile
 This will install and config the centos machine for the use of ansible and IBM tools
 
 # OS
-CentOS 7 Supported
-CentOS 8 Supported
+- CentOS 7 Supported
+- CentOS 8 Supported
 
 # Overview
 This script is built on top of CentOS 7, it will install the Ansible and the ISAM Python module, ISAM Ansible module, and ISAM Ansible Roles.

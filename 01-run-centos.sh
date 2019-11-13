@@ -43,7 +43,7 @@ ansible-galaxy install -c -p /etc/ansible/roles git+https://github.com/ibm-secur
 # Prepare ISDS Ansible Common Roles 
 ansible-galaxy install -c -p /etc/ansible/roles git+https://github.com/IBM-Security/isds-ansible-roles.git
 
-if [[ -z "${ANSIBLE_ROLES_PATH}"] ]; then
+if [[ -z "${ANSIBLE_ROLES_PATH}" ]]; then
   
   echo 'ANSIBLE_GATHERING=smart' >> /etc/bashrc
   echo 'ANSIBLE_HOST_KEY_CHECKING=false' >> /etc/bashrc
