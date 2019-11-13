@@ -56,6 +56,9 @@ if [[ -z "${ANSIBLE_ROLES_PATH}" ]]; then
   echo 'PYTHONPATH=/ansible/lib' >> /etc/bashrc
   echo 'PATH=/ansible/bin:$PATH' >> /etc/bashrc
 
+  echo "Done loading rules into: /etc/bashrc"
+else
+  echo "rules already exists in: /etc/bashrc"
 fi
 
 # To load the new environment variables into the current shell session use the source command:
