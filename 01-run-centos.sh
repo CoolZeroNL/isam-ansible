@@ -66,5 +66,7 @@ source ~/.bashrc
 
 cd 
 git clone https://github.com/IBM-Security/isam-ansible-playbook-sample.git
-git clone https://github.com/CoolZeroNL/isam-ansible.git
 cp isam-ansible/ansible.cfg isam-ansible-playbook-sample/
+
+# install plugin: for callback
+# /usr/local/lib/python3.6/site-packages/ansible/plugins
