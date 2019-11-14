@@ -24,7 +24,7 @@ yum -y install nano unzip gcc curl openssl-devel git openssh-clients; yum clean 
 yum -y install python3 python3-pip python3-devel ; yum clean all
 
 # Install/Update Python modules
-pip3 install --upgrade pip requests ansible python3-ldap 
+pip3 install --upgrade pip requests ansible python3-ldap pygments
 pip install --upgrade git+https://github.com/ibm-security/ibmsecurity#egg=ibmsecurity
 
 # Remove packages to save space
@@ -66,7 +66,9 @@ source ~/.bashrc
 
 cd 
 git clone https://github.com/IBM-Security/isam-ansible-playbook-sample.git
+
+# copy ansible play config
 cp isam-ansible/ansible.cfg isam-ansible-playbook-sample/
 
 # install plugin: for callback
-# /usr/local/lib/python3.6/site-packages/ansible/plugins
+cp isam-ansible/ansible_callback_plugin/debug_custom.py /usr/local/lib/python3.6/site-packages/ansible/plugins

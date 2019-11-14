@@ -72,3 +72,5 @@ cd ~/isam-ansible-playbook-sample
 ansible-playbook -i inventories/test base/activate_modules.yml
 ```
 
+# Callback plugin:
+This is the debug plugin from ansible, just added field `log` to the key to parse the content.
