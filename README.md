@@ -74,3 +74,5 @@ ansible-playbook -i inventories/test base/activate_modules.yml
 
 # Callback plugin:
 This is the debug plugin from ansible, just added field `log` to the key to parse the content.
+
+For each Failed line this plugin will check if there is `headers are`, `input data`, `text` in line. If so, this line will be a other color.
